@@ -7,8 +7,8 @@ import sidebar from './configs/sidebar'
 
 export default defineConfig({
   // lang: 'en-US',
-  title: 'Vitepress',
-  description: '使用 Vitepress 搭建组件库文档站点。',
+  title: 'Fahavi',
+  description: 'Industrial Machine Vision',
 
   lastUpdated: true,
   cleanUrls: true,
@@ -34,24 +34,24 @@ export default defineConfig({
       alias: {
         '@alias': path.resolve(__dirname, '../')
       }
-    }
+    },
+    server: {
+      host: true,
+      fs: {
+        allow: ['../..']
+      }
+    },
   },
 
   // vue: {},
 
   themeConfig: {
-    outlineTitle: '本页目录',
-    lastUpdatedText: '上次更新',
+    outlineTitle: 'Danh mục trang',
+    lastUpdatedText: 'Cập nhật lần cuối',
     logo: '/logo.svg',
 
     search: {
       provider: 'local',
-      // provider: 'algolia',
-      // options: {
-      //   appId: 'X51HWTCQJJ',
-      //   apiKey: 'ca20f15eb8a667898b65d13f4213ae3d',
-      //   indexName: 'vitepress-demo'
-      // }
     },
 
     // nav
@@ -61,17 +61,17 @@ export default defineConfig({
     sidebar,
 
     editLink: {
-      pattern: 'https://github.com/xinlei3166/vitepress-demo/edit/master/docs/:path',
-      text: '在 GitHub 上编辑此页'
+      pattern: 'https://github.com/thuctrandona/imv-docs/edit/master/docs/:path',
+      text: 'Chỉnh sửa trang này trên Github'
     },
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/xinlei3166/vitepress-demo' }
+      { icon: 'github', link: 'https://github.com/thuctrandona/imv-docs' }
     ],
 
     footer: {
-      message: 'Released under the MIT License.',
-      copyright: 'Copyright © 2022-present 君惜'
+      message: 'Phát hành dựa trên giấy phép MIT.',
+      copyright: 'Copyright © 2024 by FahaVi'
     }
   }
 })
