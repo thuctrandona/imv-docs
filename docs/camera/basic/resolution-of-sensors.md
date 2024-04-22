@@ -20,6 +20,6 @@ Hình ảnh cắt một phần (640x480 pixel) từ hình ảnh 2 megapixel, th�
 ![folder component after](./images/Aufloesung_VGA.jpg "Ảnh chụp bằng camera VGA")
 **Ảnh chụp bằng camera VGA**
 
-Các chi tiết bị vỡ nét, hình ảnh hầu như rất khó nhìn rõ
+Các chi tiết bị vỡ nét, hình ảnh hầu như rất khó nhìn rõ.
 
 ## Cảm biến cho máy ảnh C-mount
