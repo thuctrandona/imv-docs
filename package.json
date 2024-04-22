@@ -1,8 +1,8 @@
 {
-  "name": "vitepress-demo",
+  "name": "industrial-machine-vision",
   "version": "1.0.0",
-  "type": "module",
   "main": "index.js",
+  "type": "module",
   "license": "MIT",
   "scripts": {
     "docs:dev": "pnpm run register:components && vitepress dev docs",
